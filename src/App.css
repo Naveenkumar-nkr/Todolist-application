@@ -1,0 +1,96 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+  background: #111 url('astro.jpg') center/cover no-repeat fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 100px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #8fc5ff, #7dfab1, #c2e3ff, #fa260e, #f8ac0f, #ff9eb3, #ebebeb, #c6c6c6, #6f6f6f);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 7s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%; /* Change from 50% to 100% */
+  }
+}
+
+input {
+  font-size: 20px;
+  color: #2c3e50;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2c3e50;
+  padding: 5px;
+}
+
+.task {
+  background-color: #34495e;
+  padding: 15px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task span {
+  color: #ffffff;
+}
+
+.icon {
+  float: right;
+  margin-right: 20px;
+}
+
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected {
+  color: #ffffff;
+  background-color: #6c6777;
+}
+
+.button.clear {
+  float: right;
+  color: #ffffff;
+  background-color: #ee1630;
+  width: 170px;
+}
